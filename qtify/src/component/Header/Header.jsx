@@ -1,7 +1,7 @@
 import React from "react";
-import { TextField, Typography, Box, Button, IconButton } from "@mui/material";
+import { TextField, Typography, Box,  IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import HeadphonesIcon from "@mui/icons-material/Headphones";
+import Feedback from "./Feedback"
 
 export default function Header() {
   return (
@@ -72,18 +72,7 @@ export default function Header() {
       </Box>
 
       {/* Feedback Button */}
-      <Button
-        variant="contained"
-        sx={{
-          backgroundColor: "black",
-          color: "green",
-          fontFamily: "Poppins",
-          fontSize: { xs: "0.75rem", sm: "1rem" }, // Responsive font size
-          padding: { xs: "5px 10px", sm: "6px 16px" }, // Adjust button padding
-        }}
-      >
-        Give Feedback
-      </Button>
+      <Feedback />
     </Box>
   );
 }
